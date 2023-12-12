@@ -1,4 +1,4 @@
-public class Rectangle {
+class Rectangle {
     // Private instance variables
     private int length;
     private int breadth;
@@ -13,17 +13,9 @@ public class Rectangle {
         this.breadth = breadth;
     }
 
-    // Main method for testing
-    public static void main(String[] args) {
-        // Creating an object of the Rectangle class
-        Rectangle myRectangle = new Rectangle();
-
-        // Using setter methods to initialize instance variables
-        myRectangle.setLength(5);
-        myRectangle.setBreadth(10);
-
-        // Displaying the values of instance variables
-        System.out.println("Length: " + myRectangle.length);
-        System.out.println("Breadth: " + myRectangle.breadth);
+    // Method to calculate perimeter
+    public void calculatePerimeter() {
+        int perimeter = 2 * (length + breadth);
+        System.out.println("Perimeter: " + perimeter);
     }
 }
